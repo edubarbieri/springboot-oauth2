@@ -1,0 +1,22 @@
+
+server:
+  port: 8282
+  
+spring:
+  datasource:
+    url: jdbc:postgresql://aspire:5432/auth
+    username: auth
+    password: auth
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: update        
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+logging:
+  level:
+    org.springframework.security: DEBUG
+    
